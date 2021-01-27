@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Curves to Vector</string>
+
+    <string-array name="colorPix">
+        <item>Светлый</item>
+        <item>Темный</item>
+    </string-array>
+
+    <string-array name="mode">
+        <item>Линии</item>
+        <item>Квадратичные сплайны</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>с</item>
+        <item>мс</item>
+    </string-array>
+
+    <string name="parabola_draw">Выделите параболу № %1$d </string>
+</resources>

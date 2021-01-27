@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text"
+        android:text="@string/parabola_draw"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        style="@style/text"
+        android:textSize="20sp"
+        android:layout_height="wrap_content">
+    </TextView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="9">
+        <ru.mephi.curvestovector.DrawImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ru.mephi.curvestovector.DrawImageView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button"
+            android:foregroundGravity="center"
+            android:foreground="@drawable/ic_check_24"
+            android:visibility="visible"
+            android:layout_margin="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </FrameLayout>
+</LinearLayout>

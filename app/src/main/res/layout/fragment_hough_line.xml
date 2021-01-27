@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <ImageView
+            android:layout_weight="7"
+            android:id="@+id/photo"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_photo_camera">
+        </ImageView>
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+            android:layout_height="wrap_content">
+        </ProgressBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button"
+            android:foregroundGravity="center"
+            android:foreground="@drawable/ic_check_24"
+            android:visibility="invisible"
+            android:layout_margin="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </TextView>
+</LinearLayout>
